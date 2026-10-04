@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Boutique — PC portables d’occasion | Electro PC Casablanca</title>
+<meta name="description" content="Tous nos PC portables d’occasion contrôlés : filtrez par budget (moins de 3 000 DH, 3 000–5 000 DH, plus de 5 000 DH), par marque et par catégorie. Fiche de vérification et garantie 6 mois sur chaque machine.">
+<meta name="theme-color" content="#08080a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff2b2b'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='14' font-weight='bold' fill='%23fff' text-anchor='middle'%3EE P%3C/text%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- ============================ EN-TÊTE ============================ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Electro PC — accueil">
+      <span class="brand-mark">EP</span>
+      <span class="brand-text">ELECTRO<span>PC</span>
+        <span class="brand-sub">CASABLANCA</span>
+      </span>
+    </a>
+    <nav class="nav-desktop" aria-label="Navigation principale">
+      <a href="index.html" data-nav="index.html">Accueil</a>
+      <a href="shop.html" data-nav="shop.html">Boutique</a>
+      <a href="about.html" data-nav="about.html">À propos</a>
+      <a href="contact.html" data-nav="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn cart-btn" data-cart-btn aria-label="Ouvrir le panier">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9.5" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/>
+          <path d="M2 3h2.6l2.7 12.4a2 2 0 002 1.6h8.9a2 2 0 002-1.6L21.5 7H5.8"/>
+        </svg>
+        <span class="cart-badge" data-cart-badge data-count="0">0</span>
+      </button>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="cart-overlay" id="navOverlay" hidden></div>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
+  <a class="m-link" href="index.html" data-nav="index.html">Accueil <span class="arr">→</span></a>
+  <a class="m-link" href="shop.html" data-nav="shop.html">Boutique <span class="arr">→</span></a>
+  <a class="m-link" href="about.html" data-nav="about.html">À propos <span class="arr">→</span></a>
+  <a class="m-link" href="contact.html" data-nav="contact.html">Contact <span class="arr">→</span></a>
+  <div class="m-foot">
+    <a class="btn btn-wa btn-block" target="_blank" rel="noopener" href="https://wa.me/message/CV6KU5BXTRL5J1">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.1-1.4A10 10 0 1012 2zm4.6 13.6c-.2.6-1.2 1.1-1.7 1.2-.5.1-1 .1-1.5-.1-.4-.2-.8-.3-1.4-.6-2.5-1.1-4.2-3.7-4.3-3.8-.1-.2-.9-1.3-.9-2.5s.6-1.7.8-1.9c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.7 1.9c.1.2.1.3 0 .5l-.3.4c-.1.2-.3.3-.1.6.1.2.7 1.1 1.5 1.8 1 .9 1.8 1.2 2.1 1.3.3.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.3v.4z"/></svg>
+      Commander sur WhatsApp
+    </a>
+    <div class="socials">
+      <a class="social social--ig" href="https://www.instagram.com/electro_pc2025/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/></svg>
+        @electro_pc2025
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ============================ EN-TÊTE DE PAGE ============================ -->
+  <section class="about-hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-grid"></div>
+      <div class="orb orb-1"></div>
+    </div>
+    <div class="container" style="position:relative;z-index:2">
+      <span class="eyebrow reveal">Boutique · Stock atelier Casablanca</span>
+      <h1 class="reveal" data-d="1" style="font-size:clamp(1.9rem,7vw,3.2rem)">
+        Tous nos PC portables d’occasion
+      </h1>
+      <p class="lead reveal" data-d="2" style="max-width:620px">
+        Chaque machine est testée dans notre atelier et livrée avec sa fiche de vérification
+        et sa garantie 6 mois. Filtrez par budget, marque ou catégorie — et ajoutez directement
+        au panier pour commander via WhatsApp.
+      </p>
+      <div class="hero-meta reveal" data-d="3">
+        <span class="pill-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Garantie 6 mois sur chaque PC
+        </span>
+        <span class="pill-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4h14v12H1z"/><path d="M15 9h4l3 3v4h-7V9z"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="18.5" cy="18.5" r="2"/></svg>
+          Livraison partout au Maroc
+        </span>
+        <span class="pill-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+          Paiement à la livraison
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FILTRES + CATALOGUE ============================ -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="shop-tools reveal">
+        <!-- Budget quick-filter (concept n°5) -->
+        <div class="budget">
+          <span class="budget-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><circle cx="17.5" cy="15" r="1.3"/></svg>
+            Quel est votre budget ?
+          </span>
+          <div class="budget-cards">
+            <button class="budget-card" type="button" data-budget="low">
+              <span class="bc-ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9.2c-.6-.8-1.6-1.2-3-1.2-1.7 0-2.7.8-2.7 1.9 0 2.8 5.7 1.3 5.7 4 0 1.2-1.1 2-2.8 2-1.4 0-2.5-.5-3.1-1.3M12 6.5v11"/></svg>
+              </span>
+              <span class="bc-text">
+                <span class="bc-range">Moins de 3 000 DH</span>
+                <span class="bc-hint">Entrée de gamme &amp; bureautique</span>
+              </span>
+              <span class="bc-arrow">→</span>
+            </button>
+
+            <button class="budget-card" type="button" data-budget="mid">
+              <span class="bc-ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9.2c-.6-.8-1.6-1.2-3-1.2-1.7 0-2.7.8-2.7 1.9 0 2.8 5.7 1.3 5.7 4 0 1.2-1.1 2-2.8 2-1.4 0-2.5-.5-3.1-1.3M12 6.5v11"/></svg>
+              </span>
+              <span class="bc-text">
+                <span class="bc-range">3 000 – 5 000 DH</span>
+                <span class="bc-hint">Le meilleur rapport qualité/prix</span>
+              </span>
+              <span class="bc-arrow">→</span>
+            </button>
+
+            <button class="budget-card" type="button" data-budget="high">
+              <span class="bc-ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </span>
+              <span class="bc-text">
+                <span class="bc-range">Plus de 5 000 DH</span>
+                <span class="bc-hint">Gaming, Apple &amp; haut de gamme</span>
+              </span>
+              <span class="bc-arrow">→</span>
+            </button>
+          </div>
+          <p class="small muted" style="margin-top:4px">
+            Cliquez une tranche : la liste se met à jour et défile jusqu’aux PC correspondants.
+            Cliquez encore pour tout afficher.
+          </p>
+        </div>
+
+        <div class="tools-main">
+          <!-- Recherche + tri + catégorie -->
+          <div class="tool-row" style="grid-template-columns:1fr">
+            <div class="field-search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5L16 16"/></svg>
+              <input class="input" type="search" id="shopSearch" placeholder="Rechercher : HP, MacBook, 16 Go, Ryzen…"
+                     aria-label="Rechercher un PC portable">
+            </div>
+          </div>
+
+          <div class="tool-row" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+            <select class="input" id="shopSort" aria-label="Trier les résultats">
+              <option value="featured">Tri : PC en vedette</option>
+              <option value="asc">Prix croissant</option>
+              <option value="desc">Prix décroissant</option>
+              <option value="batt">Meilleure batterie</option>
+            </select>
+            <select class="input" id="shopCat" aria-label="Filtrer par catégorie">
+              <option value="all">Toutes catégories</option>
+            </select>
+          </div>
+
+          <div>
+            <span class="budget-label" style="margin-bottom:8px;display:flex">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h9M18 8h2M4 16h4M13 16h7"/><circle cx="15.5" cy="8" r="2"/><circle cx="10.5" cy="16" r="2"/></svg>
+              Marque
+            </span>
+            <div class="filter-chips" id="shopBrands"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Résultats -->
+      <div class="results-bar" style="margin-top:22px">
+        <span class="results-count" id="shopCount"><b>…</b></span>
+        <button class="reset-btn" id="shopReset" type="button">Réinitialiser les filtres</button>
+      </div>
+
+      <div class="pgrid shop-grid" id="shopGrid"></div>
+
+      <div class="empty-state" id="shopEmpty" hidden>
+        <h3>Aucun PC ne correspond à ces critères</h3>
+        <p>Essayez une autre tranche de budget, ou envoyez-nous votre besoin sur WhatsApp :
+          on cherche la machine qu’il vous faut.</p>
+        <div class="hero-meta" style="justify-content:center;margin-top:16px">
+          <a class="btn btn-wa" target="_blank" rel="noopener" href="https://wa.me/message/CV6KU5BXTRL5J1">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.1-1.4A10 10 0 1012 2zm4.6 13.6c-.2.6-1.2 1.1-1.7 1.2-.5.1-1 .1-1.5-.1-.4-.2-.8-.3-1.4-.6-2.5-1.1-4.2-3.7-4.3-3.8-.1-.2-.9-1.3-.9-2.5s.6-1.7.8-1.9c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.7 1.9c.1.2.1.3 0 .5l-.3.4c-.1.2-.3.3-.1.6.1.2.7 1.1 1.5 1.8 1 .9 1.8 1.2 2.1 1.3.3.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.3v.4z"/></svg>
+            Demander une recherche
+          </a>
+        </div>
+      </div>
+
+      <!-- Réassurance en bas de catalogue -->
+      <div class="assurance reveal" style="margin-top:34px">
+        <div class="as-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-3"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="M9 13l2 2 4-4"/></svg>
+          <div><b>Fiche de vérification</b>Ouvrez-la sur chaque carte</div>
+        </div>
+        <div class="as-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div><b>Garantie 6 mois</b>Carte mère, écran, SSD, clavier</div>
+        </div>
+        <div class="as-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4h14v12H1z"/><path d="M15 9h4l3 3v4h-7V9z"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="18.5" cy="18.5" r="2"/></svg>
+          <div><b>Livraison 48–72 h</b>Partout au Maroc</div>
+        </div>
+        <div class="as-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+          <div><b>Paiement à la livraison</b>Testez avant de payer</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CTA ============================ -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Vous ne trouvez pas votre configuration ?</h2>
+        <p>Dites-nous votre budget et votre usage. Nous cherchons la machine qu’il vous faut
+          dans notre stock d’occasion contrôlé et nous répondons sur WhatsApp.</p>
+        <div class="cta-actions">
+          <a class="btn btn-wa btn-lg" target="_blank" rel="noopener" href="https://wa.me/message/CV6KU5BXTRL5J1">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.1-1.4A10 10 0 1012 2zm4.6 13.6c-.2.6-1.2 1.1-1.7 1.2-.5.1-1 .1-1.5-.1-.4-.2-.8-.3-1.4-.6-2.5-1.1-4.2-3.7-4.3-3.8-.1-.2-.9-1.3-.9-2.5s.6-1.7.8-1.9c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.7 1.9c.1.2.1.3 0 .5l-.3.4c-.1.2-.3.3-.1.6.1.2.7 1.1 1.5 1.8 1 .9 1.8 1.2 2.1 1.3.3.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.3v.4z"/></svg>
+            Demander une machine
+          </a>
+          <a class="btn btn-outline btn-lg" href="contact.html">Poser une question</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ PIED DE PAGE ============================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">EP</span>
+          <span class="brand-text">ELECTRO<span>PC</span>
+            <span class="brand-sub">CASABLANCA</span>
+          </span>
+        </a>
+        <p>Spécialiste du PC portable d’occasion contrôlé à Casablanca.
+          Testé un par un, documenté, garanti 6 mois, livré partout au Maroc.</p>
+        <div class="footer-badges">
+          <span class="warranty-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Garantie 6 mois
+          </span>
+          <span class="pill-note">Livraison Maroc</span>
+        </div>
+        <div class="socials" style="margin-top:16px">
+          <a class="social social--ig" href="https://www.instagram.com/electro_pc2025/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/></svg>
+          </a>
+          <a class="social social--fb" href="https://www.facebook.com/electro_pc2025" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.2 8.4h2.6V4.9h-2.6c-2.3 0-3.9 1.6-3.9 4v2.4H7.7v3.5h2.6v6.5h3.6v-6.5h2.6l.5-3.5h-3.1V9.2c0-.6.3-.8 1.3-.8z"/></svg>
+          </a>
+          <a class="social social--tt" href="https://www.tiktok.com/@electro_pc2025" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.2 3c.6 2.3 2 3.6 4.4 3.8v3.1c-1.7 0-3.2-.5-4.4-1.4v6.6a5.7 5.7 0 11-5.7-5.7c.3 0 .6 0 .9.1v3.2a2.5 2.5 0 102.5 2.5V3h3.3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Boutique</h4>
+        <ul class="footer-links">
+          <li><a href="shop.html">Tous les PC portables</a></li>
+          <li><a href="shop.html?budget=low">Moins de 3 000 DH</a></li>
+          <li><a href="shop.html?budget=mid">3 000 – 5 000 DH</a></li>
+          <li><a href="shop.html?budget=high">Plus de 5 000 DH</a></li>
+          <li><a href="about.html">À propos</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Garantie &amp; services</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#garantie">Garantie 6 mois</a></li>
+          <li><a href="index.html#verification">Fiche de vérification</a></li>
+          <li><a href="index.html#avis">Avis clients</a></li>
+          <li><a href="contact.html#livraison">Livraison partout au Maroc</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <div class="footer-contact">
+          <div class="fc-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><b>Adresse</b>Boulevard d’Anfa<br>Casablanca 20000, Maroc</span>
+          </div>
+          <div class="fc-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.1a2 2 0 012.1-.5c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg>
+            <span><b>Téléphone</b><a href="tel:+212661234567">+212 6 61 23 45 67</a></span>
+          </div>
+          <div class="fc-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+            <span><b>Horaires</b>Lun – Sam · 9h00 – 20h00</span>
+          </div>
+          <div class="fc-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.1-1.4A10 10 0 1012 2zm4.6 13.6c-.2.6-1.2 1.1-1.7 1.2-.5.1-1 .1-1.5-.1-.4-.2-.8-.3-1.4-.6-2.5-1.1-4.2-3.7-4.3-3.8-.1-.2-.9-1.3-.9-2.5s.6-1.7.8-1.9c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.7 1.9c.1.2.1.3 0 .5l-.3.4c-.1.2-.3.3-.1.6.1.2.7 1.1 1.5 1.8 1 .9 1.8 1.2 2.1 1.3.3.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.3v.4z"/></svg>
+            <span><b>WhatsApp</b><a target="_blank" rel="noopener" href="https://wa.me/message/CV6KU5BXTRL5J1">Commande rapide →</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Electro PC — Casablanca, Maroc. Tous droits réservés.</span>
+      <nav>
+        <a href="about.html">À propos</a>
+        <a href="shop.html">Boutique</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html#garantie">Garantie</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-fab" target="_blank" rel="noopener" href="https://wa.me/message/CV6KU5BXTRL5J1" aria-label="Commander sur WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.1-1.4A10 10 0 1012 2zm4.6 13.6c-.2.6-1.2 1.1-1.7 1.2-.5.1-1 .1-1.5-.1-.4-.2-.8-.3-1.4-.6-2.5-1.1-4.2-3.7-4.3-3.8-.1-.2-.9-1.3-.9-2.5s.6-1.7.8-1.9c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.7 1.9c.1.2.1.3 0 .5l-.3.4c-.1.2-.3.3-.1.6.1.2.7 1.1 1.5 1.8 1 .9 1.8 1.2 2.1 1.3.3.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.3v.4z"/></svg>
+  <span class="wa-label">Commander</span>
+</a>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
